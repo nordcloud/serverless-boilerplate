@@ -12,6 +12,7 @@ A new project based on the project template is initialized with the command
 > sls project install sc5-serverless-boilerplate
 > cd sc5-serverless-boilerplate
 > npm install
+> rm -rf _meta
 > sls project init
 ```
 
@@ -58,7 +59,7 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 ## Release History
 
-* 2016/03/02 - v0.1.0 - Initial commit (partially working stub)
+* 2016/03/02 - v0.0.2 - Initial commit (partially working stub)
 
 ## License
 

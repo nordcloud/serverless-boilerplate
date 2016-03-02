@@ -6,5 +6,7 @@
   "author": "",
   "description": "A Slick New Serverless Project",
   "custom": {},
-  "plugins": []
+  "plugins": [
+      "serverless-cors-plugin"
+  ]
 }
