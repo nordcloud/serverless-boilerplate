@@ -1,13 +1,13 @@
 {
   "name": "sc5-serverless-boilerplate",
   "version": "0.0.1",
-  "description": "A Serverless Project and its Serverless Plugin dependencies.",
-  "author": "me",
+  "description": "A Serverless Project Template.",
+  "author": "Mikael Puittinen/SC5 Online Oy",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/"
+    "url": "https://github.com/SC5/sc5-serverless-boilerplate"
   },
   "dependencies": {
     "serverless-cors-plugin": "^0.3.1",
