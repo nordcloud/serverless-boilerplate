@@ -9,10 +9,10 @@ sc5-serverless-boilerplate is a project template for new serverless projects. Co
 A new project based on the project template is initialized with the command
 
 ```
-> sls project import sc5-serverless-boilerplate
+> sls project install sc5-serverless-boilerplate
 > cd sc5-serverless-boilerplate
 > npm install
-> sls init
+> sls project init
 ```
 
 ## Using the REST endpoint templates
