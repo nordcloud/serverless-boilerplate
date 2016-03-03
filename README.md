@@ -1,8 +1,11 @@
 # SC5 Serverless Boilerplate
 
 sc5-serverless-boilerplate is a project template for new serverless projects. Contents of the template:
-* plugins serverless-cors-plugin, serverless-helpers-js
-* s-template with RequestTemplates restGet, restPost, restPut, restDelete for use in endpoints in s-function files
+* plugin serverless-cors-plugin: allows centralized adding of CORS headers
+* plugin serverless-helpers-js: makes project name and stage available in environment variables
+* plugin serverless-optimizer-plugin: optimize size of lambda function size in deployment
+* file s-project.json: Register plugins above
+* file s-template.json: RequestTemplates restGet, restPost, restPut, restDelete for use in endpoints in s-function files
 
 ## Creating new project
 
@@ -43,12 +46,24 @@ Add the following to the "custom" section of either _s-components_ or _s-functio
 }  
 ```
 
-Deploy the endpoints inside the component folder using
+Deploy the endpoints (after deploying functions) inside the component folder using
 ```
 sls endpoint deploy --all
 ```
 Using this (instead of e.g. sls dash deploy) ensures that CORS headers (incl. the OPTIONS method 
 required for CORS preflight) are created properly
+
+(see https://github.com/joostfarla/serverless-cors-plugin)
+
+## Optimizing Lambda function size
+
+To enabled optimization of Lambda function size, add the following to the "custom" section of
+either _s-components_ or _s-function_ files. 
+
+```
+"optimize": true
+```
+(see https://github.com/serverless/serverless-optimizer-plugin)
 
 ## Determining project name / stage during runtime
 
