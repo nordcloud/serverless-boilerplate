@@ -12,10 +12,8 @@ A new project based on the project template is initialized with the command
 > sls project install sc5-serverless-boilerplate
 > cd sc5-serverless-boilerplate
 > npm install
-> rm -rf _meta
-> sls project init
 ```
-
+ 
 ## Using the REST endpoint templates
 
 The REST endpoint templates can be used by refering to them in RequestTemplates in the endpoints section of the s-function file.
@@ -36,7 +34,7 @@ When using the REST endpoint templates, the incoming event has the following str
 
 ## Defining CORS headers
 
-Add the following to the "custom" section of either s-components or s-function files.
+Add the following to the "custom" section of either _s-components_ or _s-function_ files.
 
 ```
 "cors": {
@@ -44,6 +42,13 @@ Add the following to the "custom" section of either s-components or s-function f
     "allowHeaders": ["Content-Type", "X-Amz-Date", "Authorization", "X-Api-Key"]
 }  
 ```
+
+Deploy the endpoints inside the component folder using
+```
+sls endpoint deploy --all
+```
+Using this (instead of e.g. sls dash deploy) ensures that CORS headers (incl. the OPTIONS method 
+required for CORS preflight) are created properly
 
 ## Determining project name / stage during runtime
 
@@ -53,6 +58,7 @@ The project name and stage name can be determined during runtime using
   process.env.SERVERLESS_PROJECT_NAME (for the project name)
   process.env.SERVERLESS_STAGE (for the project stage)
 ```
+
 ## TODO
 
 Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-boilerplate/issues).
