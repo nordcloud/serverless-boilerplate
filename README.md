@@ -80,6 +80,7 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 ## Release History
 
+* 2016/03/09 - v0.0.6 - Documentation updates
 * 2016/03/02 - v0.0.2 - Initial commit (partially working stub)
 
 ## License
