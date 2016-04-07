@@ -2,7 +2,6 @@
 
 sc5-serverless-boilerplate is a project template for new serverless projects. Contents of the template:
 * plugin serverless-cors-plugin: allows centralized adding of CORS headers
-* plugin serverless-helpers-js: makes project name and stage available in environment variables
 * plugin serverless-optimizer-plugin: optimize size of lambda function size in deployment
 * file s-project.json: Register plugins above
 * file s-template.json: RequestTemplates restGet, restPost, restPut, restDelete for use in endpoints in s-function files
@@ -80,6 +79,7 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 ## Release History
 
+* 2016/04/07 - v0.5.0 - Adds Serverless 0.5 compatibility
 * 2016/03/09 - v0.0.6 - Documentation updates
 * 2016/03/02 - v0.0.2 - Initial commit (partially working stub)
 
