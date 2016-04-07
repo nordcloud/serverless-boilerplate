@@ -3,6 +3,9 @@
   "version": "0.5.0",
   "description": "A REST API project template for serverless 0.5",
   "author": "Mikael Puittinen/SC5 Online Oy",
+  "contributors": [
+    "Eetu Tuomala (https://sc5.io)"
+  ],
   "license": "MIT",
   "private": false,
   "repository": {
@@ -11,10 +14,9 @@
   },
   "dependencies": {
     "serverless-cors-plugin": "^0.4",
-    "serverless-helpers-js": "^0.2.0",
     "serverless-optimizer-plugin": "^2.3.0"
   },
   "devDependencies": {
-    "aws-sdk": "^2.2.39"
+    "aws-sdk": "^2.3.1"
   }
 }
