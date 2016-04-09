@@ -3,6 +3,7 @@
 sc5-serverless-boilerplate is a project template for new serverless projects. Contents of the template:
 * plugin serverless-cors-plugin: allows centralized adding of CORS headers
 * plugin serverless-optimizer-plugin: optimize size of lambda function size in deployment
+* plugin [serverless-mocha-plugin](https://github.com/SC5/serverless-mocha-plugin): enable test driven development using mocha
 * file s-project.json: Register plugins above
 * file s-template.json: RequestTemplates restGet, restPost, restPut, restDelete for use in endpoints in s-function files
 
@@ -73,12 +74,19 @@ The project name and stage name can be determined during runtime using
   process.env.SERVERLESS_STAGE (for the project stage)
 ```
 
+## Test Driven Development
+
+Function test are created automatically when creating new functions into the test/ directory. 
+See [serverless-mocha-plugin](https://github.com/SC5/serverless-mocha-plugin) for more info
+
+
 ## TODO
 
 Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-boilerplate/issues).
 
 ## Release History
 
+* 2016/04/09 - v0.5.2 - Add serverless-mocha-plugin for test driven development
 * 2016/04/07 - v0.5.0 - Adds Serverless 0.5 compatibility
 * 2016/03/09 - v0.0.6 - Documentation updates
 * 2016/03/02 - v0.0.2 - Initial commit (partially working stub)

@@ -1,6 +1,6 @@
 {
   "name": "sc5-serverless-boilerplate",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A REST API project template for serverless 0.5",
   "author": "Mikael Puittinen/SC5 Online Oy",
   "contributors": [
@@ -13,10 +13,11 @@
     "url": "https://github.com/SC5/sc5-serverless-boilerplate"
   },
   "dependencies": {
-    "serverless-cors-plugin": "^0.4",
-    "serverless-optimizer-plugin": "^2.3.0"
+    "serverless-cors-plugin": "0.4",
+    "serverless-mocha-plugin": "0.5.1",
+    "serverless-optimizer-plugin": "2.3.0"
   },
   "devDependencies": {
-    "aws-sdk": "^2.2.48"
+    "aws-sdk": "2.2.48"
   }
 }

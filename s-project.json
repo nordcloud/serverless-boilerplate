@@ -3,6 +3,7 @@
   "custom": {},
   "plugins": [
       "serverless-cors-plugin",
-      "serverless-optimizer-plugin"
+      "serverless-optimizer-plugin",
+      "serverless-mocha-plugin"
   ]
 }
