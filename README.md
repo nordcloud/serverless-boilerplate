@@ -16,7 +16,7 @@ A new project based on the project template is initialized with the command
 > cd myProjectName
 > npm install
 ```
- 
+
 ## Using the REST endpoint templates
 
 The REST endpoint templates can be used by refering to them in RequestTemplates in the endpoints section of the s-function file.
@@ -29,9 +29,9 @@ RequestTemplates: "$${restGet}"
 When using the REST endpoint templates, the incoming event has the following structure:
 ```
 {
-    "method": "GET/POST/PUT/DELETE/...",    
+    "method": "GET/POST/PUT/DELETE/...",
     "body": { ... payload sent by client ... },  (only in restPost and restPut)
-    "id": "identifier" (only in restPut and restDelete)   
+    "id": "identifier" (only in restPut and restDelete)
 }
 ```
 
@@ -43,14 +43,14 @@ Add the following to the "custom" section of either _s-components_ or _s-functio
 "cors": {
     "allowOrigin": "*",
     "allowHeaders": ["Content-Type", "X-Amz-Date", "Authorization", "X-Api-Key"]
-}  
+}
 ```
 
 Deploy the endpoints (after deploying functions) inside the component folder using
 ```
 sls endpoint deploy --all
 ```
-Using this (instead of e.g. sls dash deploy) ensures that CORS headers (incl. the OPTIONS method 
+Using this (instead of e.g. sls dash deploy) ensures that CORS headers (incl. the OPTIONS method
 required for CORS preflight) are created properly
 
 (see https://github.com/joostfarla/serverless-cors-plugin)
@@ -58,7 +58,7 @@ required for CORS preflight) are created properly
 ## Optimizing Lambda function size
 
 To enabled optimization of Lambda function size, add the following to the "custom" section of
-either _s-components_ or _s-function_ files. 
+either _s-components_ or _s-function_ files.
 
 ```
 "optimize": true
@@ -67,7 +67,7 @@ either _s-components_ or _s-function_ files.
 
 ## Determining project name / stage during runtime
 
-Some resources (e.g. database tables, SNS topics, etc...) may be specific to the project and stage. 
+Some resources (e.g. database tables, SNS topics, etc...) may be specific to the project and stage.
 The project name and stage name can be determined during runtime using
 ```
   process.env.SERVERLESS_PROJECT_NAME (for the project name)
@@ -76,7 +76,7 @@ The project name and stage name can be determined during runtime using
 
 ## Test Driven Development
 
-Function test are created automatically when creating new functions into the test/ directory. 
+Function test are created automatically when creating new functions into the test/ directory.
 See [serverless-mocha-plugin](https://github.com/SC5/serverless-mocha-plugin) for more info
 
 
