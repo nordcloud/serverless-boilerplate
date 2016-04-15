@@ -12,7 +12,7 @@
   },
   "restDelete": {
     "application/json": {
-      "method": "$context.httpMethod", 
+      "method": "$context.httpMethod",
       "id": "$input.params('id')"
     }
   }
