@@ -1,6 +1,6 @@
 {
   "name": "sc5-serverless-boilerplate",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "A REST API project template for serverless 0.5",
   "author": "Mikael Puittinen (https://sc5.io)",
   "contributors": [
