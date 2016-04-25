@@ -2,7 +2,7 @@
   "name": "sc5-serverless-boilerplate",
   "version": "0.5.2",
   "description": "A REST API project template for serverless 0.5",
-  "author": "Mikael Puittinen/SC5 Online Oy",
+  "author": "Mikael Puittinen (https://sc5.io)",
   "contributors": [
     "Eetu Tuomala (https://sc5.io)"
   ],
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "serverless-cors-plugin": "0.4",
-    "serverless-mocha-plugin": "0.5.1",
+    "serverless-mocha-plugin": "0.5.2",
     "serverless-optimizer-plugin": "2.3.0"
   },
   "devDependencies": {
