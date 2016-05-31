@@ -39,6 +39,15 @@
                 "logs:PutLogEvents"
               ],
               "Resource": "arn:aws:logs:${region}:*:*"
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+              "dynamodb:Scan",
+              "dynamodb:PutItem",
+              "dynamodb:DeleteItem"
+              ],
+              "Resource": "arn:aws:dynamodb:${region}:*:*"
             }
           ]
         },
