@@ -86,6 +86,7 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 ## Release History
 
+* 2016/04/09 - v0.5.5 - DynamoDB tables allowed by default
 * 2016/04/09 - v0.5.2 - Add serverless-mocha-plugin for test driven development
 * 2016/04/07 - v0.5.0 - Adds Serverless 0.5 compatibility
 * 2016/03/09 - v0.0.6 - Documentation updates
