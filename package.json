@@ -15,7 +15,8 @@
   "dependencies": {
     "serverless-cors-plugin": "0.4",
     "serverless-mocha-plugin": "^0.5.3",
-    "serverless-optimizer-plugin": "2.3.0"
+    "serverless-optimizer-plugin": "2.3.0",
+    "serverless-endpoint-helper": "^1.0.0"
   },
   "devDependencies": {
     "aws-sdk": "2.2.48"

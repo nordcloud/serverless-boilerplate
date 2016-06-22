@@ -4,6 +4,7 @@ sc5-serverless-boilerplate is a project template for new serverless projects. Co
 * plugin serverless-cors-plugin: allows centralized adding of CORS headers
 * plugin serverless-optimizer-plugin: optimize size of lambda function size in deployment
 * plugin [serverless-mocha-plugin](https://github.com/SC5/serverless-mocha-plugin): enable test driven development using mocha
+* plugin [serverless-endpoint-helper](https://github.com/SC5/serverless-endpoint-helper): enable endpoint create from cli
 * file s-project.json: Register plugins above
 * file s-template.json: RequestTemplates restGet, restPost, restPut, restDelete for use in endpoints in s-function files
 
@@ -86,6 +87,7 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 ## Release History
 
+* 2016/06/22 - v0.5.6 - Add serverless-endpoint-helper plugin
 * 2016/04/09 - v0.5.5 - DynamoDB tables allowed by default
 * 2016/04/09 - v0.5.2 - Add serverless-mocha-plugin for test driven development
 * 2016/04/07 - v0.5.0 - Adds Serverless 0.5 compatibility
