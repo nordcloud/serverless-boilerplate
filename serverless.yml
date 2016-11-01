@@ -1,0 +1,102 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: sc5-serverless-messenger-bot # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+      - dynamodb:Scan
+      - dynamodb:Query
+      - dynamodb:GetItem
+      - dynamodb:PutItem
+      - dynamodb:DeleteItem
+      Resource: arn:aws:dynamodb:${self:provider.region}:*:*
+    - Effect: Allow
+      Action:
+      - SNS:ListTopics
+      - SNS:Publish
+      Resource: arn:aws:sns:${self:provider.region}:*:*
+package:
+  exclude:
+    - test/**
+    - .git/**
+    - docs/**
+
+functions:
+  facebookBot: 
+    handler: facebook-bot/handler.handler
+    events:
+      - http:
+          path: facebook-bot
+          method: get
+          integration: lambda
+          response:
+            headers:
+              Content-Type: "'text/html'"
+            template: $input.path('$.response')
+      - http:
+          path: facebook-bot 
+          method: post
+          integration: lambda
+      - sns: ${self:service}-fbMessengerTopic-${opt:stage, self:provider.stage}
+  witAiHandler:
+    handler: wit-ai/handler.handler
+    timeout: 60
+    events:
+      - sns: ${self:service}-witAiTopic-${opt:stage, self:provider.stage}
+  
+#    you can add any of the following events
+#    events:
+#      - http:
+#          path: users/create
+#          method: get
+#      - s3: ${env.BUCKET}
+#      - schedule: rate(10 minutes)
+#      - sns: greeter-topic
+
+# you can add CloudFormation resource templates here
+
+resources: 
+  Resources:
+    SessionsTable: 
+      Type: AWS::DynamoDB::Table
+      DeletionPolicy: Delete
+      Properties: 
+        AttributeDefinitions: 
+          - AttributeName: id
+            AttributeType: S
+        KeySchema: 
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput: 
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:service}-sessions-${opt:stage, self:provider.stage}
+    
+#    WitAiTopic:
+#      Type: AWS::SNS::Topic
+#      Properties:
+#        TopicName: ${self:service}-witAi-${opt:stage, self:provider.stage}
+#    FBMessengerTopic:
+#      Type: AWS::SNS::Topic
+#      Properties:
+#        TopicName: ${self:service}-fbMessenger-${opt:stage, self:provider.stage}
+
+plugins:
+  - serverless-mocha-plugin
+  - serverless-webpack
