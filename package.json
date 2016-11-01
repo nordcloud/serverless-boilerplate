@@ -1,24 +1,31 @@
 {
   "name": "sc5-serverless-boilerplate",
-  "version": "0.5.5",
-  "description": "A REST API project template for serverless 0.5",
-  "author": "Mikael Puittinen (https://sc5.io)",
+  "version": "1.0.0",
+  "description": "A boilerplate for Serverless applications by SC5 Online",
+  "main": "fnHello/handler.js",
+  "keywords": [
+    "serverless",
+    "aws"
+  ],
+  "author": "Mikael Puittinen",
   "contributors": [
-    "Eetu Tuomala (https://sc5.io)"
+    "Eetu Tuomala"
   ],
   "license": "MIT",
-  "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/SC5/sc5-serverless-boilerplate"
+    "url": "https://github.com/SC5/sc5-serverless-boilerplate.git"
   },
-  "dependencies": {
-    "serverless-cors-plugin": "0.4",
-    "serverless-mocha-plugin": "^0.5.3",
-    "serverless-optimizer-plugin": "2.3.0",
-    "serverless-endpoint-helper": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "aws-sdk": "2.2.48"
+    "aws-sdk": "^2.6.3",
+    "copy-webpack-plugin": "^3.0.1",
+    "json-loader": "^0.5.4",
+    "serverless-mocha-plugin": "^1.0.3",
+    "serverless-offline": "^3.2.1",
+    "serverless-webpack": "^1.0.0-rc.2"
+  },
+  "scripts": {
+    "test": "SLS_DEBUG=true serverless invoke test"
   }
 }
