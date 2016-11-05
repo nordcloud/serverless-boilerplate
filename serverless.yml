@@ -31,5 +31,19 @@ plugins:
   - serverless-webpack
   - serverless-offline
 
-resources:
-  Resources: ${file(./resources/resources.yml)}
+#resources:
+#  Resources:
+#    SessionsTable:
+#      Type: AWS::DynamoDB::Table
+#      DeletionPolicy: Delete
+#      Properties:
+#        AttributeDefinitions:
+#          - AttributeName: id
+#            AttributeType: S
+#        KeySchema:
+#          - AttributeName: id
+#            KeyType: HASH
+#        ProvisionedThroughput:
+#          ReadCapacityUnits: 1
+#          WriteCapacityUnits: 1
+#        TableName: ${self:service}-sessions-${opt:stage, self:provider.stage}
