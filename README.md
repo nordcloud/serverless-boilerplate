@@ -32,6 +32,3 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 Copyright (c) 2016 [SC5](http://sc5.io/), licensed for users and contributors under MIT license.
 https://github.com/sc5/sc5-serverless-boilerplate/blob/master/LICENSE-MIT
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/SC5/sc5-serverless-boilerplate/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
