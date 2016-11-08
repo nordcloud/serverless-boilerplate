@@ -17,9 +17,14 @@ describe('hello', () => {
   });
 
   it('implement tests here', (done) => {
-    wrapped.run({}, (err, response) => {
-      expect(response).to.not.be.empty();
-      done('no tests implemented');
-    });
+    wrapped.run({
+      foo: 'bar',
+    })
+      .then((response) => {
+        expect(response.event.foo).to.equal('bar');
+        expect(response.message).to.match(/successful/);
+        done();
+      })
+      .catch(done);
   });
 });
