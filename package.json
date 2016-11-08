@@ -23,9 +23,16 @@
     "json-loader": "^0.5.4",
     "serverless-mocha-plugin": "^1.0.3",
     "serverless-offline": "^3.2.1",
-    "serverless-webpack": "^1.0.0-rc.2"
+    "serverless-webpack": "^1.0.0-rc.2",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-config-airbnb-base": "^5.0.2",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.1"
   },
   "scripts": {
-    "test": "SLS_DEBUG=true serverless invoke test"
+    "test": "SLS_DEBUG=true serverless invoke test",
+    "lint": "eslint ."
   }
 }
