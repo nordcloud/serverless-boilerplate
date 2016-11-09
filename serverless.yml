@@ -18,18 +18,12 @@ package:
     - .git/**
 
 functions:
-  hello: 
-    handler: fnHello/handler.hello
-    events:
-      - http:
-          path: hello
-          method: get
-          integration: lambda
 
 plugins:
   - serverless-mocha-plugin
   - serverless-webpack
   - serverless-offline
+
 
 #resources:
 #  Resources:
