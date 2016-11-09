@@ -28,7 +28,7 @@
     "eslint-plugin-react": "^6.1.1",
     "json-loader": "^0.5.4",
     "node-yaml": "^3.0.3",
-    "serverless-mocha-plugin": "^1.1.0",
+    "serverless-mocha-plugin": "^1.2.0",
     "serverless-offline": "^3.2.1",
     "serverless-webpack": "^1.0.0-rc.2"
   },

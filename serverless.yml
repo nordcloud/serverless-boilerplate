@@ -18,12 +18,17 @@ package:
     - .git/**
 
 functions:
+  test:
+    handler: test.handler
 
 plugins:
   - serverless-mocha-plugin
   - serverless-webpack
   - serverless-offline
 
+custom:
+  serverless-mocha-plugin:
+    functionTemplate: templates/function.ejs
 
 #resources:
 #  Resources:
