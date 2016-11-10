@@ -3,6 +3,7 @@ service: sc5-serverless-boilerplate # NOTE: update this with your service name
 provider:
   name: aws
   runtime: nodejs4.3
+  cfLogs: true
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -18,18 +19,15 @@ package:
     - .git/**
 
 functions:
-  hello: 
-    handler: fnHello/handler.hello
-    events:
-      - http:
-          path: hello
-          method: get
-          integration: lambda
 
 plugins:
   - serverless-mocha-plugin
   - serverless-webpack
   - serverless-offline
+
+custom:
+  serverless-mocha-plugin:
+    functionTemplate: templates/function.ejs
 
 #resources:
 #  Resources:
