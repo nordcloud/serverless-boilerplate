@@ -7,11 +7,11 @@ provider:
     - Effect: Allow
       Action:
       - dynamodb:*
-      Resource: arn:aws:dynamodb:${self:provider.region}:*:*
+      Resource: arn:aws:dynamodb:${opt:region, self:provider.region}:*:*
     - Effect: Allow
       Action:
       - SNS:*
-      Resource: arn:aws:sns:${self:provider.region}:*:*
+      Resource: arn:aws:sns:${opt:region, self:provider.region}:*:*
 package:
   exclude:
     - test/**
