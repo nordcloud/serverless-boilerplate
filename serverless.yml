@@ -4,6 +4,10 @@ provider:
   name: aws
   runtime: nodejs4.3
   cfLogs: true
+  environment:
+    SERVERLESS_STAGE: ${opt:stage, self:provider.stage}
+    SERVERLESS_PROJECT: ${self:service}
+#    TABLE_NAME: ${self:provider.environment.SERVERLESS_PROJECT}-sessions-${self:provider.environment.SERVERLESS_STAGE}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -44,4 +48,4 @@ custom:
 #        ProvisionedThroughput:
 #          ReadCapacityUnits: 1
 #          WriteCapacityUnits: 1
-#        TableName: ${self:service}-sessions-${opt:stage, self:provider.stage}
+#        TableName: ${self:provider.environment.TABLE_NAME}

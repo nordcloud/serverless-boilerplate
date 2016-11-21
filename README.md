@@ -7,7 +7,6 @@ sc5-serverless-boilerplate is a project template for new serverless services. Co
 * file `serverless.yml.json`: Register plugins above
 * file `webpack.config.js`: Settings for webpack-plugin
 * file `templates/function.ejs`: Template to use for new functions
-* library `lib/envVars.js`: used by the function template to populate SERVERLESS_PROJECT, SERVERLESS_STAGE and SERVERLESS_FUNCTION
 
 ## Creating new project
 
