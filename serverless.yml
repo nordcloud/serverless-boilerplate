@@ -1,3 +1,5 @@
+frameworkVersion: ">=1.2.0 <2.0.0"
+
 service: sc5-serverless-boilerplate # NOTE: update this with your service name
 
 provider:
