@@ -1,18 +1,25 @@
+frameworkVersion: ">=1.2.0 <2.0.0"
+
 service: sc5-serverless-boilerplate # NOTE: update this with your service name
 
 provider:
   name: aws
   runtime: nodejs4.3
   cfLogs: true
+  environment:
+    SERVERLESS_STAGE: ${opt:stage, self:provider.stage}
+    SERVERLESS_PROJECT: ${self:service}
+    SERVERLESS_REGION: ${opt:region, self:provider.region}
+#    TABLE_NAME: ${self:provider.environment.SERVERLESS_PROJECT}-sessions-${self:provider.environment.SERVERLESS_STAGE}
   iamRoleStatements:
     - Effect: Allow
       Action:
       - dynamodb:*
-      Resource: arn:aws:dynamodb:${opt:region, self:provider.region}:*:*
+      Resource: arn:aws:dynamodb:${self:provider.environment.SERVERLESS_REGION}:*:*
     - Effect: Allow
       Action:
       - SNS:*
-      Resource: arn:aws:sns:${opt:region, self:provider.region}:*:*
+      Resource: arn:aws:sns:${self:provider.environment.SERVERLESS_REGION}:*:*
 package:
   exclude:
     - test/**
@@ -44,4 +51,4 @@ custom:
 #        ProvisionedThroughput:
 #          ReadCapacityUnits: 1
 #          WriteCapacityUnits: 1
-#        TableName: ${self:service}-sessions-${opt:stage, self:provider.stage}
+#        TableName: ${self:provider.environment.TABLE_NAME}
