@@ -35,6 +35,7 @@ plugins:
 custom:
   serverless-mocha-plugin:
     functionTemplate: templates/function.ejs
+  webpackIncludeModules: true
 
 #resources:
 #  Resources:
