@@ -10,7 +10,15 @@ sc5-serverless-boilerplate is a project template for new serverless services. Co
 
 ## Creating new project
 
-A new project based on the project template is initialized with the command
+With Serverless Framework v1.5 and later, a new project based on the project template is initialized with the command
+
+```
+> sls install -u https://github.com/SC5/sc5-serverless-boilerplate -n myservicename
+> cd myservicename
+> npm install
+```
+
+and with Serverless Framework v1.2 - v1.4
 
 ```
 > sls install -u https://github.com/SC5/sc5-serverless-boilerplate
@@ -19,7 +27,6 @@ A new project based on the project template is initialized with the command
 > perl -pi -e "s/sc5-serverless-boilerplate/myservicename/" serverless.yml package.json
 > npm install
 ```
-
 
 ## TODO
 
