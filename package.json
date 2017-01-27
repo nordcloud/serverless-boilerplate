@@ -26,6 +26,7 @@
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.1",
     "json-loader": "^0.5.4",
+    "license-checker": "^8.0.3",
     "node-yaml": "^3.0.3",
     "serverless-mocha-plugin": "^1.3.1",
     "serverless-offline": "^3.2.1",
@@ -34,6 +35,7 @@
   },
   "scripts": {
     "test": "SLS_DEBUG=true serverless invoke test",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check-licenses": "license-checker --exclude 'MIT, MIT/X11, ISC, Apache-2.0, Unlicense, WTFPL, BSD-2-Clause, BSD-3-Clause, (MIT AND CC-BY-3.0)'"
   }
 }
