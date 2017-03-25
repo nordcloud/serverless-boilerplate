@@ -4,7 +4,7 @@ service: sc5-serverless-boilerplate # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs4.3
+  runtime: nodejs6.10
   cfLogs: true
   environment:
     SERVERLESS_STAGE: ${opt:stage, self:provider.stage}
