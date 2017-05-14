@@ -20,7 +20,6 @@ provider:
       Action:
       - SNS:*
       Resource: arn:aws:sns:${self:provider.environment.SERVERLESS_REGION}:*:*
-# Uncomment if you use serverless-kms-secrets
 #    - Effect: Allow
 #      Action:
 #      - KMS:Decrypt
@@ -42,9 +41,6 @@ custom:
   serverless-mocha-plugin:
     functionTemplate: templates/function.ejs
   webpackIncludeModules: true
-  serverless-kms-secrets:
-    keyId: xxxxxxxxxx
-# Uncomment if you use serverless-kms-secrets
 #  kmsSecrets: ${file(kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml)}
 
 
