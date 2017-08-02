@@ -19,6 +19,13 @@ With Serverless Framework v1.5 and later, a new project based on the project tem
 > npm install
 ```
 
+## Testing vulnerabilities
+
+Test vulnerabilities with NSP using
+```
+> npm run nsp
+```
+
 ## TODO
 
 Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-boilerplate/issues).
