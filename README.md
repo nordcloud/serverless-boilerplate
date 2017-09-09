@@ -34,6 +34,8 @@ You can compare your project setup (dependencies, devdependencies, scripts) with
 > npm run compare-boilerplate
 ```
 
+The script reports only for items that are in the boilerplate and differ from your current project.
+
 ## TODO
 
 Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-boilerplate/issues).
