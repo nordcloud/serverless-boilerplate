@@ -26,6 +26,14 @@ Test vulnerabilities with NSP using
 > npm run nsp
 ```
 
+## Comparing setup with boilerplate
+
+You can compare your project setup (dependencies, devdependencies, scripts) with the boilerplate using the command
+
+```
+> npm run compare-boilerplate
+```
+
 ## TODO
 
 Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-boilerplate/issues).
