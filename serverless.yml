@@ -40,6 +40,11 @@ plugins:
 custom:
   serverless-mocha-plugin:
     functionTemplate: templates/function.ejs
+# Uncomment these if you need to run the service offline for testing
+#    preTestCommands:
+#      - bash .tools/startOffline.sh
+#    postTestCommands:
+#      - bash .tools/stopOffline.sh
   webpackIncludeModules: true
 #  kmsSecrets: ${file(kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml)}
 
