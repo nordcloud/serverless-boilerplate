@@ -31,7 +31,7 @@
     "nsp": "^2.7.0",
     "request-json": "^0.6.2",
     "serverless-kms-secrets": "^1.0.0",
-    "serverless-mocha-plugin": "^1.6.1",
+    "serverless-mocha-plugin": "^1.7.0",
     "serverless-offline": "^3.2.1",
     "serverless-webpack": "^2.2.2",
     "webpack-node-externals": "^1.5.4"
