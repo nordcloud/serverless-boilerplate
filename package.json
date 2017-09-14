@@ -30,7 +30,7 @@
     "node-yaml": "^3.0.3",
     "nsp": "^2.7.0",
     "request-json": "^0.6.2",
-    "serverless-kms-secrets": "^1.0.0",
+    "serverless-kms-secrets": "^1.0.2",
     "serverless-mocha-plugin": "^1.7.0",
     "serverless-offline": "^3.2.1",
     "serverless-webpack": "^1.0.0-rc.3",
