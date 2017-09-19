@@ -25,6 +25,7 @@ provider:
 #      - KMS:Decrypt
 #      Resource: ${self:custom.kmsSecrets.keyArn}
 package:
+  individually: true
   exclude:
     - test/**
     - .git/**

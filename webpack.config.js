@@ -9,7 +9,7 @@ function getFunctions() {
   const functionNames = Object.keys(serverlessYml.functions || {});
   functionNames.forEach((name) => {
     const handlerFile = serverlessYml.functions[name].handler.replace(/.[^.]*$/, '');
-    webPackFunctions[handlerFile] = [`./${handlerFile}.js`];
+    webPackFunctions[handlerFile] = `./${handlerFile}.js`;
   });
   return webPackFunctions;
 }
