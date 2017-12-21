@@ -1,7 +1,7 @@
 {
-  "name": "sc5-serverless-boilerplate",
-  "version": "1.4.0",
-  "description": "A boilerplate for Serverless applications by SC5 Online",
+  "name": "serverless-boilerplate",
+  "version": "1.4.1",
+  "description": "A boilerplate for Serverless applications by Nordcloud",
   "keywords": [
     "serverless",
     "aws"
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SC5/sc5-serverless-boilerplate.git"
+    "url": "https://github.com/nordcloud/serverless-boilerplate.git"
   },
   "dependencies": {},
   "devDependencies": {

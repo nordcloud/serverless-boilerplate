@@ -1,6 +1,6 @@
-# SC5 Serverless Boilerplate
+# Nordcloud Serverless Boilerplate
 
-sc5-serverless-boilerplate is a project template for new serverless services. Contents of the template:
+The Nordcloud serverless-boilerplate is a project template for new serverless services. Contents of the template:
 * plugin [serverless-mocha-plugin](https://github.com/SC5/serverless-mocha-plugin): enable test driven development using mocha, creation of functions from command line
 * plugin [serverless-offline](https://github.com/dherault/serverless-offline): enable endpoint create from cli
 * plugin [serverless-webpack](https://github.com/elastic-coders/serverless-webpack): enable endpoint create from cli
@@ -14,7 +14,7 @@ sc5-serverless-boilerplate is a project template for new serverless services. Co
 With Serverless Framework v1.5 and later, a new project based on the project template is initialized with the command
 
 ```
-> sls install -u https://github.com/SC5/sc5-serverless-boilerplate -n myservicename
+> sls install -u https://github.com/nordcloud/serverless-boilerplate -n myservicename
 > cd myservicename
 > npm install
 ```
@@ -46,5 +46,5 @@ Please see project GitHub [issue tracker](https://github.com/SC5/sc5-serverless-
 
 ## License
 
-Copyright (c) 2016 [SC5](http://sc5.io/), licensed for users and contributors under MIT license.
-https://github.com/sc5/sc5-serverless-boilerplate/blob/master/LICENSE-MIT
+Copyright (c) 2016 [Nordcloud](https://www.nordcloud.com/), licensed for users and contributors under MIT license.
+https://github.com/nordcloud/serverless-boilerplate/blob/master/LICENSE-MIT
