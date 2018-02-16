@@ -37,6 +37,8 @@ plugins:
   - serverless-webpack
   - serverless-offline
   - serverless-kms-secrets
+  - serverless-plugin-custom-roles
+  - serverless-plugin-split-stacks
 
 custom:
   serverless-mocha-plugin:

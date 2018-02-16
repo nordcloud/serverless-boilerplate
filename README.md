@@ -5,6 +5,8 @@ The Nordcloud serverless-boilerplate is a project template for new serverless se
 * plugin [serverless-offline](https://github.com/dherault/serverless-offline): run your services offline for e.g. testing
 * plugin [serverless-webpack](https://github.com/elastic-coders/serverless-webpack): optimize pacakge size with webpack
 * plugin [serverless-kms-secrets](https://github.com/SC5/serverless-kms-secrets): ease handling of KMS encrypted secrets
+* plugin [serverless-plugin-custom-roles](https://www.npmjs.com/package/serverless-plugin-custom-roles): enable setting roles on a per function basis
+* plugin [serverless-plugin-split-stacks](https://github.com/dougmoscrop/serverless-plugin-split-stacks): Split Cloudformation stack to multiple stacks to overcome the 200 resource limit
 * file `serverless.yml.json`: Register plugins above
 * file `webpack.config.js`: Settings for webpack-plugin
 * file `templates/function.ejs`: Template to use for new functions
