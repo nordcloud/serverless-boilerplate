@@ -2,8 +2,8 @@
 
 The Nordcloud serverless-boilerplate is a project template for new serverless services. Contents of the template:
 * plugin [serverless-mocha-plugin](https://github.com/SC5/serverless-mocha-plugin): enable test driven development using mocha, creation of functions from command line
-* plugin [serverless-offline](https://github.com/dherault/serverless-offline): enable endpoint create from cli
-* plugin [serverless-webpack](https://github.com/elastic-coders/serverless-webpack): enable endpoint create from cli
+* plugin [serverless-offline](https://github.com/dherault/serverless-offline): run your services offline for e.g. testing
+* plugin [serverless-webpack](https://github.com/elastic-coders/serverless-webpack): optimize pacakge size with webpack
 * plugin [serverless-kms-secrets](https://github.com/SC5/serverless-kms-secrets): ease handling of KMS encrypted secrets
 * file `serverless.yml.json`: Register plugins above
 * file `webpack.config.js`: Settings for webpack-plugin
