@@ -12,14 +12,14 @@ provider:
     SERVERLESS_REGION: ${opt:region, self:provider.region}
     TABLE_NAME: ${self:provider.environment.SERVERLESS_PROJECT}-${self:provider.environment.SERVERLESS_STAGE}
   iamRoleStatements:
-    - Effect: Allow
-      Action:
-      - dynamodb:*
-      Resource: arn:aws:dynamodb:${self:provider.environment.SERVERLESS_REGION}:*:*
-    - Effect: Allow
-      Action:
-      - SNS:*
-      Resource: arn:aws:sns:${self:provider.environment.SERVERLESS_REGION}:*:*
+#    - Effect: Allow
+#      Action:
+#      - dynamodb:*
+#      Resource: arn:aws:dynamodb:${self:provider.environment.SERVERLESS_REGION}:*:*
+#    - Effect: Allow
+#      Action:
+#      - SNS:*
+#      Resource: arn:aws:sns:${self:provider.environment.SERVERLESS_REGION}:*:*
 #    - Effect: Allow
 #      Action:
 #      - KMS:Decrypt
