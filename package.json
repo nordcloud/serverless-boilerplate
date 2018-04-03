@@ -31,7 +31,7 @@
     "nsp": "^2.7.0",
     "request-json": "^0.6.2",
     "serverless-kms-secrets": "^1.0.2",
-    "serverless-mocha-plugin": "^1.7.0",
+    "serverless-mocha-plugin": "^1.8.0",
     "serverless-offline": "^3.2.1",
     "serverless-plugin-custom-roles": "^1.0.0",
     "serverless-plugin-split-stacks": "^1.4.1",
