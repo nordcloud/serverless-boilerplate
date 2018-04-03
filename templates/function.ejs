@@ -3,7 +3,7 @@
 // Template from sc5-serverless-boilerplate
 // Set the env vars for the function
 
-module.exports.<%= handlerFunction %> = (event, context, callback) => {
+module.exports.<%= handlerFunction %> = async (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
