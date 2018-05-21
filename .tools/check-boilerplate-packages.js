@@ -1,6 +1,6 @@
 const request = require('request-json');
 const client = request.createClient('https://raw.githubusercontent.com');
-const boilerplatePackagesPath = "/SC5/sc5-serverless-boilerplate/master/package.json";
+const boilerplatePackagesPath = "/nordcloud/serverless-boilerplate/master/package.json";
 
 const currentPackages = require('../package.json');
 
