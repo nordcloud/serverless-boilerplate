@@ -23,10 +23,11 @@ With Serverless Framework v1.5 and later, a new project based on the project tem
 
 ## Testing vulnerabilities
 
-Test vulnerabilities with NSP using
+Test vulnerabilities with
 ```
-> npm run nsp
+> npm audit
 ```
+(NSP is no longer available)
 
 ## Comparing setup with boilerplate
 
