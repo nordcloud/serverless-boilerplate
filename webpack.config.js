@@ -18,7 +18,7 @@ module.exports = {
   entry: getFunctions(),
   target: 'node',
   module: {
-    loaders: [
+    rules: [
       { test: /\.json/, loader: 'json-loader' },
     ],
   },
