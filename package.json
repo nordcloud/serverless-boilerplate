@@ -29,14 +29,14 @@
     "license-checker": "^8.0.3",
     "node-yaml": "^3.0.3",
     "nsp": "^3.2.1",
-    "request-json": "^0.6.2",
+    "request-json": "^0.6.4",
     "serverless-kms-secrets": "^1.0.3",
     "serverless-mocha-plugin": "^1.9.1",
-    "serverless-offline": "^3.2.1",
+    "serverless-offline": "^3.31.3",
     "serverless-plugin-custom-roles": "^1.0.0",
     "serverless-plugin-split-stacks": "^1.4.1",
     "serverless-webpack": "^3.0.0",
-    "webpack": "^4.8.3",
+    "webpack": "^4.28.2",
     "webpack-node-externals": "^1.5.4"
   },
   "scripts": {
