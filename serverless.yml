@@ -4,7 +4,7 @@ service: serverless-boilerplate # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
   cfLogs: true
   environment:
     SERVERLESS_STAGE: ${opt:stage, self:provider.stage}
